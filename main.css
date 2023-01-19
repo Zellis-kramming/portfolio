@@ -6,17 +6,53 @@ body {
   color: rgb(41, 40, 40);
   line-height: 1.5rem;
   letter-spacing: 0.08rem;
+  overflow-x: hidden;
 }
 
 main {
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
+figure {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  margin-top: 1.5rem;
+}
+
 h1,
 h2,
 h3,
 h4 {
   font-family: "Josefin Sans", sans-serif;
+  line-height: 2.5rem;
+}
+
+h1,
+h2 {
+  font-size: 2.1rem;
+}
+h3 {
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+}
+
+/*utility classes*/
+.no-margin--top {
+  margin-top: 0;
+}
+.no-margin--bottom {
+  margin-bottom: 0;
+}
+
+article {
+  /*background-color: #fafafa9f;*/
+  background-color: lightgray;
 }
 
 /* Top anvigation*/
@@ -41,7 +77,6 @@ h4 {
   justify-content: flex-end;
 }
 .top-navigation .top-navigation-items .active {
-  /*background-color: aquamarine;*/
   text-decoration-line: underline;
   text-decoration-thickness: 3px;
 }
@@ -52,12 +87,26 @@ h4 {
   letter-spacing: 0.2rem;
 }
 
+.container-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.container-img figure {
+  flex-direction: row;
+}
+
+.container-img figure img {
+  width: 100%;
+}
+
 /* Info about*/
 .info-block {
   display: flex;
   flex-direction: column;
-  background-color: #eeeeee9f;
-  padding: 2.5rem;
+  margin-bottom: 4rem;
+  padding: 1rem;
 }
 
 .info-block figure {
@@ -68,16 +117,9 @@ h4 {
 
 .info-block-image {
   border-radius: 10px;
-  width: 400px;
+  width: 100%;
   align-items: center;
   object-fit: contain;
-}
-
-.info-block-text h1,
-h2 {
-  font-size: 2.3rem;
-  font-family: "Josefin Sans", sans-serif;
-  line-height: 2.3rem;
 }
 
 /* Contct page*/
@@ -94,6 +136,7 @@ input {
   font-size: 0.8rem;
   width: 100%;
   padding: 0.8rem;
+  margin-bottom: 0.8rem;
 }
 textarea {
   border-radius: 3px;
@@ -108,19 +151,31 @@ textarea {
   margin-bottom: 0.8rem;
 }
 .field-email {
-  margin-bottom: 0.8rem;
+  margin-bottom: 1rem;
 }
 .send-button {
   padding: 0.8rem 4.5rem 0.8rem 4.5rem;
   border-radius: 0.3rem;
   border: 2rem;
-  background-color: palevioletred;
+  background-color: rgb(223, 179, 194);
+  max-width: 24rem;
+  font-size: larger;
+  font-family: barlow, sans-serif;
+}
+.send-button:active {
+  background-color: rgb(187, 56, 98);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 .container-socialmedia {
   display: flex;
 }
 .container-socialmedia figure {
   flex-direction: row;
+  padding: 1rem;
+}
+.container-socialmedia img {
+  max-width: 2.5rem;
 }
 /*Footer*/
 .bottom-navigation {
@@ -175,15 +230,16 @@ textarea {
   .info-block {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    padding: 2.5rem;
   }
   .info-block-image {
-    width: 500px;
-    max-width: 1000px;
+    width: 450px;
+    max-width: 600px;
   }
   .info-block-text {
     text-align: left;
-    padding: 0 1rem 0 2rem;
+    max-width: 100%;
+    padding: 0rem 3rem 1rem 2.5rem;
   }
   .info-block--one-column {
     flex-direction: row;
@@ -192,6 +248,9 @@ textarea {
     width: 100%;
     height: auto;
     object-fit: cover;
+  }
+  .container-img figure img {
+    width: 350px;
   }
 
   .flex-container-footer {
@@ -212,7 +271,6 @@ textarea {
   /*form*/
   .send-button {
     cursor: pointer;
-    background-color: rgb(221, 178, 192);
     box-shadow: 0 0.2rem #999;
   }
   .send-button:hover {
@@ -221,14 +279,37 @@ textarea {
     font-weight: bolder;
   }
   .send-button:active {
-    background-color: rgb(143, 75, 97);
     box-shadow: 0 5px #666;
     transform: translateY(4px);
+    background-color: rgb(187, 56, 98);
+  }
+  .continer-social-media
+  /* About me*/
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 2rem;
+  }
+  .grid-items-container {
+    padding: 1rem;
+  }
+  .grid-items-passions {
+    margin: 2rem;
   }
   /* For desktop: */
-}
+  .tag {
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.696);
+    color: white;
+    height: 30px;
+    width: 50px;
+    display: inline;
+    padding: 10px;
+    font-weight: bold;
+  }
 
-/*
+  /*
 .information-about {
   display: flex;
   background-color: rgb(195, 195, 235);
@@ -318,3 +399,4 @@ main {
 
 
 */
+}
