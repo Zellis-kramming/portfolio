@@ -5,16 +5,21 @@
       @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Josefin+Sans:ital,wght@0,300;0,400;1,300&display=swap");
     </style>
     <meta charset="UTF-8" />
+    <meta name="description" content="Elinor Krammings Portfolio" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="main.css" />
     <script defer src="script.js"></script>
     <title>Elinors Portfolio Kontakt</title>
   </head>
-
+  <!--Body-->
   <body>
     <nav class="top-navigation">
-      <div class="top-navigation-logo">🔌🔌Elinor Kramming</div>
+      <div class="top-navigation-logo">
+        <a href="index.html"
+          ><img src="img/Logo.png" alt="Elinor krammings logotyp"
+        /></a>
+      </div>
       <div class="top-navigation-items">
         <a href="index.html">Hem</a>
         <a href="aboutMe.html">Om mig</a>
@@ -25,17 +30,17 @@
     <main>
       <h1>Hör gärna av dig!</h1>
       <!---Form-->
-      <form action="" class="form-wrapper">
+      <form class="form-wrapper">
         <div class="field-message">
           <h2>Kära Elinor Kramming,</h2>
-          <label for="text"></label>
-          <textarea rows="10" cols="40" name="message" form="usrform">
+          <label for="message"></label>
+          <textarea id="message" rows="10" cols="40" name="message">
 Skriv ditt meddelande här....</textarea
           >
         </div>
         <div class="field-first-name">
           <h3>Hälsningar från,</h3>
-          <label for="first_name">Namn</label>
+          <label for="first_name">Namn*</label>
           <input
             required
             class="form_input"
@@ -47,7 +52,7 @@ Skriv ditt meddelande här....</textarea
         </div>
 
         <div class="field-email">
-          <label for="email">E-postadress</label>
+          <label for="email">E-postadress*</label>
           <input
             required
             type="email"
@@ -58,6 +63,7 @@ Skriv ditt meddelande här....</textarea
         </div>
         <input type="submit" class="send-button" />
       </form>
+      <!--  section with social media contacts-->
       <section>
         <h4>Eller genom :</h4>
         <div class="container-socialmedia">
@@ -67,7 +73,9 @@ Skriv ditt meddelande här....</textarea
             /></a>
           </figure>
           <figure>
-            <img src="img/GitHub.png" alt="Git hub logga" />
+            <a href="https://github.com/Zellis-kramming/portfolio"
+              ><img src="img/GitHub.png" alt="Git hub logga"
+            /></a>
           </figure>
 
           <figure>
@@ -78,7 +86,7 @@ Skriv ditt meddelande här....</textarea
         </div>
       </section>
     </main>
-
+    <!--footer and bottom navigation-->
     <footer class="bottom-navigation">
       <div class="flex-container-footer">
         <!--<section class="bottom-navigation"></section>-->

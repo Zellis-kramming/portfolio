@@ -6,6 +6,7 @@ body {
   color: rgb(41, 40, 40);
   line-height: 1.5rem;
   letter-spacing: 0.08rem;
+  line-height: 1.8rem;
   overflow-x: hidden;
 }
 
@@ -42,6 +43,10 @@ h3 {
   line-height: 1.7rem;
 }
 
+.h2-styling {
+  font-size: 1.4rem;
+}
+
 /*utility classes*/
 .no-margin--top {
   margin-top: 0;
@@ -51,8 +56,7 @@ h3 {
 }
 
 article {
-  /*background-color: #fafafa9f;*/
-  background-color: lightgray;
+  background-color: rgba(236, 238, 236, 0.914);
 }
 
 /* Top anvigation*/
@@ -116,27 +120,65 @@ article {
 }
 
 .info-block-image {
-  border-radius: 10px;
+  border-radius: 0.8rem;
   width: 100%;
   align-items: center;
   object-fit: contain;
 }
-
+.tag-container {
+  display: flex;
+  margin-top: 2rem;
+}
+.tag {
+  border-radius: 3rem;
+  color: white;
+  display: inline;
+  font-weight: bold;
+  padding: 0.7rem 1rem 0.7rem 1rem;
+  text-align: center;
+}
+.tag1 {
+  width: 50%;
+  background-color: #829460;
+}
+.tag2 {
+  width: 15%;
+  margin-left: 1rem;
+  background-color: #829460;
+}
+.tag3 {
+  width: 15%;
+  margin-left: 1rem;
+  background-color: #829460;
+}
+.tag4 {
+  width: 15%;
+  margin-left: 1rem;
+  background-color: rgba(40, 38, 38, 0.696);
+}
+.tag5 {
+  width: 15%;
+  margin-left: 1rem;
+  background-color: rgba(40, 38, 38, 0.696);
+}
 /* Contct page*/
 /* Form*/
 .form-wrapper {
-  background-color: #84986b38;
-  padding: 5rem;
+  background-color: rgba(221, 222, 221, 0.58);
+  padding: 2rem;
   border-radius: 3px;
   max-width: 800px;
 }
+.form-wrapper label {
+  margin-bottom: 1rem;
+}
+
 input {
   border-radius: 3px;
   border-color: grey;
   font-size: 0.8rem;
   width: 100%;
   padding: 0.8rem;
-  margin-bottom: 0.8rem;
 }
 textarea {
   border-radius: 3px;
@@ -157,10 +199,11 @@ textarea {
   padding: 0.8rem 4.5rem 0.8rem 4.5rem;
   border-radius: 0.3rem;
   border: 2rem;
-  background-color: rgb(223, 179, 194);
+  background-color: #ffe1e1;
   max-width: 24rem;
   font-size: larger;
   font-family: barlow, sans-serif;
+  transition-delay: 0.1s;
 }
 .send-button:active {
   background-color: rgb(187, 56, 98);
@@ -236,23 +279,23 @@ textarea {
     width: 450px;
     max-width: 600px;
   }
+  .info-block-image-cv {
+    height: max-content;
+    padding-top: 2.5rem;
+  }
   .info-block-text {
     text-align: left;
-    max-width: 100%;
-    padding: 0rem 3rem 1rem 2.5rem;
+
+    padding: 0rem 3rem 0rem 3rem;
   }
   .info-block--one-column {
     flex-direction: row;
   }
-  .info-block--one-column .info-block-image {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
+
   .container-img figure img {
     width: 350px;
   }
-
+  /*footer*/
   .flex-container-footer {
     display: flex;
   }
@@ -277,13 +320,17 @@ textarea {
     background-color: rgb(143, 75, 97);
     color: aliceblue;
     font-weight: bolder;
+    transition: ease-in-out;
+    transition-delay: 0.2s;
   }
   .send-button:active {
     box-shadow: 0 5px #666;
     transform: translateY(4px);
     background-color: rgb(187, 56, 98);
   }
-  .continer-social-media
+  .container-socialmedia a:hover {
+    border-bottom: 0.2rem solid #999;
+  }
   /* About me*/
 
   .grid-container {
@@ -297,106 +344,4 @@ textarea {
   .grid-items-passions {
     margin: 2rem;
   }
-  /* For desktop: */
-  .tag {
-    border-radius: 50px;
-    background-color: rgba(0, 0, 0, 0.696);
-    color: white;
-    height: 30px;
-    width: 50px;
-    display: inline;
-    padding: 10px;
-    font-weight: bold;
-  }
-
-  /*
-.information-about {
-  display: flex;
-  background-color: rgb(195, 195, 235);
-}
-.test1 {
-  flex-direction: column;
-}
-.main-h1 {
-  flex-direction: column;
-}
-
-.flex-container {
-  display: flex;
-  background-color: rgb(153, 193, 234);
-}
-
-.flex-container > section {
-  background-color: #f1f1f1;
-
-  font-size: 30px;
-}
-.flex-container img {
-  max-width: 60%;
-}
-.flex-container-footer {
-  display: flex;
-}
-.bottom-navigation-section {
-  flex-direction: row;
-  padding: 3rem;
-  margin: 3rem;
-  background-color: #f1f1f1;
-  font-size: 30px;
-  gap: 10rem;
-}
-
-
-body {
-  max-width: 1300px;
-  margin: 0 auto;
-  font-size: 18px;
-  font-family: barlow;
-  color: rgb(41, 40, 40);
-  line-height: 1.5rem;
-  letter-spacing: 0.08rem;
-}
-
-main {
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-.top-navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: lightcyan;
-  margin-bottom: 3rem;
-}
-.top-navigation .top-navigation-items {
-  display: flex;
-  height: 4rem;
-  gap: 10px;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.info-block {
-  background-color: aqua;
-  display: flex;
-  background-color: ghostwhite;
-  padding: 1rem;
-}
-
-.info-block-image {
-  width: 200px;
-  border-radius: 10px;
-}
-
-
-
-
-
-
-
-
-
-*/
 }
