@@ -4,6 +4,23 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Josefin+Sans:ital,wght@0,300;0,400;1,300&display=swap");
     </style>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
     <meta charset="UTF-8" />
     <meta name="description" content="Elinor Krammings Portfolio" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,15 +31,15 @@
   </head>
   <!--Body-->
   <body>
-    <nav class="top-navigation">
-      <div class="top-navigation-logo">
+    <nav class="navigation">
+      <div class="navigation-logo">
         <a href="index.html"
           ><img src="img/Logo.png" alt="Elinor krammings logotyp"
         /></a>
       </div>
-      <div class="top-navigation-items">
+      <div class="navigation-items">
         <a href="index.html">Hem</a>
-        <a class="active" href="aboutMe.html">Om mig</a>
+        <a href="#" class="active">Om mig</a>
         <a href="myWork.html">Arbete</a>
         <a href="contact.html">Kontakt</a>
       </div>
@@ -33,7 +50,7 @@
         <figure>
           <img
             class="info-block-image"
-            src="/img/Profil-picture.jpg"
+            src="/img/ProfilPic2.jpg"
             alt="Elinor Kramming"
           />
         </figure>
@@ -54,134 +71,47 @@
           </p>
         </div>
       </article>
-      <!--Section with my passions, text and img-->
-      <section>
-        <h2>Mina passioner</h2>
-        <p>Skapande och naturen är genomgåede i mina passioner.</p>
-        <article class="info-block info-block--one-column">
+
+      <h2>Mina passioner</h2>
+      <p>Skapande och naturen är genomgående i mina passioner.</p>
+
+      <div class="grid-container">
+        <div class="grid-item">
           <figure>
             <img
               class="info-block-image"
               src="img/gardening-modified.png"
-              alt=" storlek på morötter gämförs med tändsticksask"
+              alt=""
             />
           </figure>
-          <div class="info-block-text">
+          <div>
             <h3>Odla</h3>
-
             <p>
               Få saker är så givande som att gå ut och plocka sina egna
               grönsaker för att sedan laga mat av dem. Dock lyckas inte alltid
               min odling och i somras bjöds kolfjärillarna på kolbuffé.
             </p>
           </div>
-        </article>
-      </section>
-      <section>
-        <article class="info-block info-block--one-column">
-          <div class="info-block-text">
-            <h3>Skapa i min trädgård</h3>
-            <p>
-              Genom att skapa i min trädgård får jag utöva min kreativitet och
-              vara ute samtidigt! Projekt jag ahr gjort genom åren är en
-              köksträdgård. Kallmurat en mur. Byggt "vattenfall" av sten" Byggt
-              fågelbad,verandor och ett växthus.
-            </p>
-          </div>
+        </div>
+
+        <div class="grid-item">
           <figure>
             <img
               class="info-block-image"
-              src="img/garden-wather-modified.png"
-              alt="liten fontän i gjutgärnskärl"
+              src="/img/garden-wather-modified.png"
+              alt=""
             />
           </figure>
-        </article>
-      </section>
-      <article class="info-block info-block--one-column">
-        <figure>
-          <img
-            class="info-block-image"
-            src="img/Outside-wiev-modified.png"
-            alt="naturvy med solnedgång och vatten"
-          />
-        </figure>
-        <div class="info-block-text">
-          <h3>Var i naturen</h3>
-
+          <h3>Skapa i min trädgård</h3>
           <p>
-            Att få vistas i naturen ger mig alltid ro i själen. gärna en
-            promenad vid vattnet eller en tur i skogen.
+            Genom att skapa i min trädgård får jag utöva min kreativitet och
+            vara ute samtidigt! Projekt jag har gjort genom åren är en
+            köksträdgård. Kallmurat en mur. Byggt "vattenfall" av sten" Byggt
+            fågelbad, verandor och ett växthus.
           </p>
         </div>
-      </article>
 
-      <section>
-        <article class="info-block info-block--one-column">
-          <div class="info-block-text">
-            <h3>Hänga med min hund</h3>
-            <p>
-              Tillsamman med min hund kan jag utöva många av de saker som får
-              oss att må bra. En joggingtur en regnig morgon eller ett härligt
-              dopp.
-            </p>
-          </div>
-          <figure>
-            <img
-              class="info-block-image"
-              src="img/dog-wather-modified.png"
-              alt="Hund som badar på strand"
-            />
-          </figure>
-        </article>
-      </section>
-      <section>
-        <article class="info-block info-block--one-column">
-          <div class="info-block-text">
-            <h3>Lyssna på musik</h3>
-            <p>
-              Musiken får mig alltid att må bra! Och visst är det underbart att
-              få gå på en konsert och uppleva musiken live tillsammans med andra
-              människor.
-            </p>
-          </div>
-          <figure>
-            <img class="info-block-image" src="img/consert.png" alt="konsert" />
-          </figure>
-        </article>
-      </section>
-    </main>
-
-    <footer class="bottom-navigation">
-      <div class="flex-container-footer">
-        <!--<section class="bottom-navigation"></section>-->
-        <a href="index.html" class="bottom-navigation">Hem</a>
-        <a href="aboutMe.html" class="bottom-navigation active">Om mig</a>
-        <a href="myWork.html" class="bottom-navigation">Arbete</a>
-        <a href="contact.html" class="bottom-navigation">Kontakt</a>
-      </div>
-    </footer>
-
-    <h2>Mina passioner</h2>
-    <p>Skapande och naturen är genomgående i mina passioner.</p>
-    <div class="grid-container">
-      <div class="grid-items-passions">
-        <figure>
-          <img
-            class="info-block-image"
-            src="img/gardening-modified.png"
-            alt=""
-          />
-        </figure>
-        <div>
-          <h3>Odla1</h3>
-
-          <p>
-            Få saker är så givande som att gå ut och plocka sina egna grönsaker
-            för att sedan laga mat av dem. Dock lyckas inte alltid min odling
-            och i somras bjöds kolfjärillarna på kolbuffé.
-          </p>
-        </div>
-        <div class="grid-items-passions">
+        <div class="grid-item">
           <figure>
             <img
               class="info-block-image"
@@ -190,39 +120,40 @@
             />
           </figure>
           <div>
-            <h3>Var i naturen3</h3>
+            <h3>Var i naturen</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              Att bara få vara i naturen, andas in luften lyssna på fåglarna.
+              Känna grönskan under fötterna.
             </p>
           </div>
-          <div class="grid-items-passions">
-            <figure>
-              <img
-                class="info-block-image"
-                src="/img/dog-wather-modified.png"
-                alt="Hund som badar på strand"
-              />
-            </figure>
-            <h3>Skapa i min trädgård4</h3>
+        </div>
+
+        <div class="grid-item">
+          <figure>
+            <img
+              class="info-block-image"
+              src="/img/dog-wather-modified.png"
+              alt="Hund som badar på strand"
+            />
+          </figure>
+          <div>
+            <h3>Hänga med min hund</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur
+              Tillsammans med min hund kan jag njuta av en skogspromenad eller
+              ett dopp.
             </p>
           </div>
-          <div class="grid-items-passions">
-            <figure>
-              <img
-                class="info-block-image"
-                src="/img/dog-wather-modified.png"
-                alt="Hund som badar på strand"
-              />
-            </figure>
+        </div>
+
+        <div class="grid-item">
+          <figure>
+            <img
+              class="info-block-image"
+              src="img/consert.png"
+              alt="liveband på scen"
+            />
+          </figure>
+          <div>
             <h3>Lyssna på musik</h3>
             <p>
               Musiken får mig alltid att må bra! Och visst är det underbart att
@@ -231,40 +162,38 @@
             </p>
           </div>
         </div>
-      </div>
-      <div class="grid-items-passions">
-        <figure>
-          <img
-            class="info-block-image"
-            src="/img/garden-wather-modified.png"
-            alt=""
-          />
-        </figure>
-        <h3>Skapa i min trädgård2</h3>
-        <p>
-          Genom att skapa i min trädgård får jag utöva min kreativitet och vara
-          ute samtidigt! Projekt jag har gjort genom åren är en köksträdgård.
-          Kallmurat en mur. Byggt "vattenfall" av sten" Byggt fågelbad, verandor
-          och ett växthus.
-        </p>
-      </div>
 
-      <div class="grid-items-passions">
-        <figure>
-          <img
-            class="info-block-image"
-            src="/img/garden-wather-modified.png"
-            alt=""
-          />
-        </figure>
-        <h3>Skapa i min trädgård2</h3>
-        <p>
-          Genom att skapa i min trädgård får jag utöva min kreativitet och vara
-          ute samtidigt! Projekt jag har gjort genom åren är en köksträdgård.
-          Kallmurat en mur. Byggt "vattenfall" av sten" Byggt fågelbad, verandor
-          och ett växthus.
-        </p>
+        <div class="grid-item">
+          <figure>
+            <img
+              class="info-block-image"
+              src="/img/garden-wather-modified.png"
+              alt=""
+            />
+          </figure>
+          <div>
+            <h3>Skapa i min trädgård</h3>
+            <p>
+              Genom att skapa i min trädgård får jag utöva min kreativitet och
+              vara ute samtidigt! Projekt jag har gjort genom åren är en
+              köksträdgård. Kallmurat en mur. Byggt "vattenfall" av sten" gjutit
+              ett fågelbad av cement och rabarberblad, byggt två verandor och
+              ett växthus av återvunna fönster.
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
+    </main>
+    <!--Footer using same nav as top-->
+    <footer>
+      <nav class="navigation">
+        <div class="navigation-items">
+          <a href="index.html">Hem</a>
+          <a href="#" class="active">Om mig</a>
+          <a href="myWork.html">Arbete</a>
+          <a href="contact.html">Kontakt</a>
+        </div>
+      </nav>
+    </footer>
   </body>
 </html>

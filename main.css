@@ -9,6 +9,14 @@ body {
   line-height: 1.8rem;
   overflow-x: hidden;
 }
+input,
+textarea {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: rgb(41, 40, 40);
+}
 
 main {
   padding-left: 20px;
@@ -34,17 +42,15 @@ h4 {
   line-height: 2.5rem;
 }
 
-h1,
-h2 {
+h1 {
   font-size: 2.1rem;
 }
-h3 {
-  font-size: 1.4rem;
-  line-height: 1.7rem;
+h2 {
+  font-size: 1.5rem;
 }
-
-.h2-styling {
-  font-size: 1.4rem;
+h3 {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
 }
 
 /*utility classes*/
@@ -54,37 +60,40 @@ h3 {
 .no-margin--bottom {
   margin-bottom: 0;
 }
+.margin-bottom {
+  margin-bottom: 4rem;
+}
 
 article {
   background-color: rgba(236, 238, 236, 0.914);
+  border-radius: 5px;
 }
 
 /* Top anvigation*/
-.top-navigation {
+.navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /*background-color: hsla(0, 100%, 94%, 0.195);*/
   margin-bottom: 3rem;
   flex-direction: column;
   padding: 1rem;
 }
-.top-navigation-logo {
+.navigation-logo {
   margin: 0.5rem;
   padding-bottom: 0.5rem;
 }
-.top-navigation .top-navigation-items {
+.navigation .navigation-items {
   display: flex;
   gap: 1.6rem;
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
 }
-.top-navigation .top-navigation-items .active {
+.navigation .navigation-items .active {
   text-decoration-line: underline;
   text-decoration-thickness: 3px;
 }
-.top-navigation a {
+.navigation a {
   text-decoration: none;
   color: rgb(41, 40, 40);
   font-weight: 500;
@@ -95,7 +104,7 @@ article {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 2.5rem;
 }
 .container-img figure {
   flex-direction: row;
@@ -127,47 +136,46 @@ article {
 }
 .tag-container {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 2rem;
+  gap: 1rem;
 }
 .tag {
   border-radius: 3rem;
   color: white;
   display: inline;
   font-weight: bold;
-  padding: 0.7rem 1rem 0.7rem 1rem;
+  padding: 0.8rem;
   text-align: center;
+  width: 3.5rem;
 }
 .tag1 {
-  width: 50%;
   background-color: #829460;
 }
 .tag2 {
-  width: 15%;
-  margin-left: 1rem;
   background-color: #829460;
 }
 .tag3 {
-  width: 15%;
-  margin-left: 1rem;
   background-color: #829460;
+  padding-right: 20px;
 }
 .tag4 {
-  width: 15%;
-  margin-left: 1rem;
   background-color: rgba(40, 38, 38, 0.696);
 }
 .tag5 {
-  width: 15%;
-  margin-left: 1rem;
   background-color: rgba(40, 38, 38, 0.696);
 }
 /* Contct page*/
 /* Form*/
 .form-wrapper {
   background-color: rgba(221, 222, 221, 0.58);
-  padding: 2rem;
+  margin-top: 1.5rem;
+  padding: 1rem 4rem;
   border-radius: 3px;
-  max-width: 800px;
+  max-width: 50rem;
+}
+.form-wrapper h3 {
+  margin-bottom: 1rem;
 }
 .form-wrapper label {
   margin-bottom: 1rem;
@@ -179,7 +187,9 @@ input {
   font-size: 0.8rem;
   width: 100%;
   padding: 0.8rem;
+  margin-bottom: 1.5rem;
 }
+
 textarea {
   border-radius: 3px;
   border-color: grey;
@@ -220,6 +230,13 @@ textarea {
 .container-socialmedia img {
   max-width: 2.5rem;
 }
+/*Grid Passions*/
+.grid-item {
+  background-color: whitesmoke;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+}
 /*Footer*/
 .bottom-navigation {
   width: auto;
@@ -242,29 +259,31 @@ textarea {
   transition: 0.7s;
   color: green;
 }
-.bottom-navigation a:visited {
-  text-decoration: none;
-  color: black;
-}
 
 /* Desktop*/
 @media only screen and (min-width: 768px) {
-  .top-navigation {
+  main {
+    padding: 0;
+  }
+  .navigation {
     justify-content: space-between;
     flex-direction: row;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
   }
-  .top-navigation a {
+  footer .navigation {
+    justify-content: center;
+  }
+  .navigation a {
     padding-right: 3.5rem;
   }
-  .top-navigation a:hover {
-    transition: 0.7s;
+  .navigation a:hover {
+    transition: 0.6s;
     color: green;
-    font-weight: bolder;
+
     text-decoration: underline;
   }
 
-  .top-navigation .top-navigation-items {
+  .navigation .navigation-items {
     display: flex;
     height: 4rem;
     justify-content: space-between;
@@ -274,20 +293,17 @@ textarea {
     display: flex;
     flex-direction: row;
     padding: 2.5rem;
+    gap: 30px;
   }
   .info-block-image {
-    width: 450px;
-    max-width: 600px;
+    width: 300px;
+    max-width: 400px;
   }
   .info-block-image-cv {
     height: max-content;
     padding-top: 2.5rem;
   }
-  .info-block-text {
-    text-align: left;
 
-    padding: 0rem 3rem 0rem 3rem;
-  }
   .info-block--one-column {
     flex-direction: row;
   }
@@ -300,18 +316,24 @@ textarea {
     display: flex;
   }
   .bottom-navigation {
-    flex-direction: row;
     font-size: 1.2rem;
-    gap: 20rem;
     justify-content: space-evenly;
     height: 15rem;
     width: auto;
   }
   .bottom-navigation a {
     padding: 0 3rem 0 3rem;
+    color: black;
+  }
+
+  .bottom-navigation .active {
+    text-decoration-line: underline;
+    text-decoration-thickness: 3px;
+    color: red;
   }
 
   /*form*/
+
   .send-button {
     cursor: pointer;
     box-shadow: 0 0.2rem #999;
@@ -335,13 +357,8 @@ textarea {
 
   .grid-container {
     display: grid;
+    gap: 2rem;
     grid-template-columns: auto auto auto;
-    padding: 2rem;
-  }
-  .grid-items-container {
-    padding: 1rem;
-  }
-  .grid-items-passions {
-    margin: 2rem;
+    padding-bottom: 4rem;
   }
 }

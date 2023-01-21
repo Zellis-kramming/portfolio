@@ -4,6 +4,23 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Josefin+Sans:ital,wght@0,300;0,400;1,300&display=swap");
     </style>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
     <meta charset="UTF-8" />
     <meta name="description" content="Elinor Krammings Portfolio" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,29 +31,34 @@
   </head>
   <!--Body-->
   <body>
-    <nav class="top-navigation">
-      <div class="top-navigation-logo">
+    <nav class="navigation">
+      <div class="navigation-logo">
         <a href="index.html"
           ><img src="img/Logo.png" alt="Elinor krammings logotyp"
         /></a>
       </div>
-      <div class="top-navigation-items">
+      <div class="navigation-items">
         <a href="index.html">Hem</a>
         <a href="aboutMe.html">Om mig</a>
         <a href="myWork.html">Arbete</a>
-        <a class="active" href="contact.html">Kontakt</a>
+        <a href="#" class="active">Kontakt</a>
       </div>
     </nav>
     <main>
       <h1>Hör gärna av dig!</h1>
       <!---Form-->
-      <form class="form-wrapper">
+
+      <form action="mailto:zellis.k@gmail.com" class="form-wrapper">
         <div class="field-message">
           <h2>Kära Elinor Kramming,</h2>
           <label for="message"></label>
-          <textarea id="message" rows="10" cols="40" name="message">
-Skriv ditt meddelande här....</textarea
-          >
+          <textarea
+            id="message"
+            rows="10"
+            cols="40"
+            name="message"
+            placeholder="Skriv ditt meddelande här...."
+          ></textarea>
         </div>
         <div class="field-first-name">
           <h3>Hälsningar från,</h3>
@@ -63,6 +85,7 @@ Skriv ditt meddelande här....</textarea
         </div>
         <input type="submit" class="send-button" />
       </form>
+
       <!--  section with social media contacts-->
       <section>
         <h4>Eller genom :</h4>
@@ -87,14 +110,15 @@ Skriv ditt meddelande här....</textarea
       </section>
     </main>
     <!--footer and bottom navigation-->
-    <footer class="bottom-navigation">
-      <div class="flex-container-footer">
-        <!--<section class="bottom-navigation"></section>-->
-        <a href="index.html" class="bottom-navigation">Hem</a>
-        <a href="aboutMe.html" class="bottom-navigation">Om mig</a>
-        <a href="myWork.html" class="bottom-navigation active">Arbete</a>
-        <a href="contact.html" class="bottom-navigation">Kontakt</a>
-      </div>
+    <footer>
+      <nav class="navigation">
+        <div class="navigation-items">
+          <a href="index.html">Hem</a>
+          <a href="aboutMe.html">Om mig</a>
+          <a href="myWork.html">Arbete</a>
+          <a href="#" class="active">Kontakt</a>
+        </div>
+      </nav>
     </footer>
   </body>
 </html>
