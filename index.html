@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="sv">
   <head>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-W6J2JEX2NM"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-W6J2JEX2NM");
+    </script>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Josefin+Sans:ital,wght@0,300;0,400;1,300&display=swap");
     </style>
@@ -29,6 +42,8 @@
     <link rel="stylesheet" type="text/css" href="main.css" />
     <link rel="manifest" href="/site.webmanifest" />
     <script defer src="script.js"></script>
+    <script defer src="app.js"></script>
+    <script src="https://www.googleoptimize.com/optimize.js?id=OPT-NWKTCG2"></script>
     <title>Elinors Portfolio hem</title>
   </head>
   <!--Body-->
@@ -60,10 +75,16 @@
           </figure>
           <div>
             <div class="info-block-text">
-              <h1>Hej! Jag heter Elinor Krammming</h1>
+              <h1>Hej! Jag heter Elinor Kramming</h1>
               <h2 class="h2-styling">
                 Jag studerar Ux Design med kravkompetens.
               </h2>
+              <p id="hero">
+                Hej Besökare, välkommen till mig portfölj det är
+                <span id="temperature"></span> grader varmt .
+              </p>
+              <p id="grader">Det är grader varmt</p>
+              <button on click></button>
 
               <p>
                 Efter många år av arbete innom en barnrättsorganisation ville
@@ -71,7 +92,7 @@
                 med kundkontakt och kundresor som jag jobbat med. Ux Designer
                 lockade mig mycket, då jag även tycker om att jobba för en god
                 sak och bra och inkluderande webbplatser ser jag som något
-                vikigt.
+                viktigt.
               </p>
               <p>
                 Jag ser mig själv som en kreativ problemlösare som är bra på att

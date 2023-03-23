@@ -52,7 +52,12 @@ h3 {
   font-size: 1.2rem;
   line-height: 1.7rem;
 }
-
+#hero {
+  background-color: rgb(227, 240, 240);
+}
+#mySpan {
+  color: blueviolet;
+}
 /*utility classes*/
 .no-margin--top {
   margin-top: 0;
